@@ -179,6 +179,10 @@ public class DeckOfCards
             }
             counter++;
         }
+        if (this.getSize == 0)
+        {
+            flag = true;
+        }
         return flag;
     }
 
