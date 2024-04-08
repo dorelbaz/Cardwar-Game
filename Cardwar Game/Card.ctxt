@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Card
+comment1.params=
+comment1.target=Card()
+comment1.text=Constructs\ a\ random\ card\ from\ the\ cards\ array\ list.
+comment2.params=card
+comment2.target=int\ compare(Card)
+comment2.text=Compares\ 2\ cards\ from\ player\ 1\ and\ 2.
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4

@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=DialogPaneController
+comment1.params=event
+comment1.target=void\ on_Button_Clicked(javafx.event.ActionEvent)
+numComments=2

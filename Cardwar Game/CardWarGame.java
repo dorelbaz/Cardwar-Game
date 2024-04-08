@@ -1,12 +1,26 @@
-public class CardWarGame
-{
-    public static void main(String[] args)
-    {
-        /* Generates 2 random card decks for player 1 and 2.*/
-        DeckOfCards player1 = new DeckOfCards();
-        DeckOfCards player2 = new DeckOfCards();
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import java.io.IOException;
 
-        /* Starts the card war game. */
-        player1.versus(player2);
+public class CardWarGame extends Application 
+{
+    public static DeckOfCards player1;
+    public static DeckOfCards player2;
+    
+    @Override
+    public void start(Stage stage) throws IOException 
+    {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Dialog Pane.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("Card War Game");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public static void main(String[] args) 
+    {
+        launch();
     }
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DialogPaneController">
+   <children>
+      <ToolBar layoutY="7.0" prefHeight="40.0" prefWidth="600.0">
+        <items>
+          <Button fx:id="action" mnemonicParsing="false" onAction="#on_Button_Clicked" text="Begin" />
+        </items>
+      </ToolBar>
+      <DialogPane fx:id="dialogpane" contentText="Press begin to start" headerText="   Welcome to a card war game" layoutX="120.0" layoutY="173.0" />
+   </children>
+</Pane>

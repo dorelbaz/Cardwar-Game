@@ -36,18 +36,19 @@ public class Card
     /* Compares 2 cards from player 1 and 2. */
     public int compare(Card card)
     {
-        System.out.println("Player 1: " + this + "   Player 2: " + card.toString());
+        String cardsDrawn = "Player 1: " + this + "   Player 2: " + card.toString();
+        DeckOfCards.setHeaderText(cardsDrawn);
         if (cards.indexOf(this.toString()) < cards.indexOf(card.toString()))
         {
-            System.out.println("Player 2 takes");
+            DeckOfCards.setContentText("Player 2 takes");
             return player2takes;
         }
         if (cards.indexOf(this.toString()) > cards.indexOf(card.toString()))
         {
-            System.out.println("Player 1 takes");
+            DeckOfCards.setContentText("Player 1 takes");
             return player1takes;
         }
-        System.out.println("DRAW 3!");
+        DeckOfCards.setContentText("DRAW 3");
         return isEqual;
     }
 
